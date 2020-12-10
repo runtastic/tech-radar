@@ -48,9 +48,9 @@ function radar_visualization(config) {
   ];
 
   const rings = [
-    { radius: 130 },
-    { radius: 220 },
-    { radius: 310 },
+    { radius: 140 },
+    { radius: 226 },
+    { radius: 313 },
     { radius: 400 }
   ];
 
@@ -58,7 +58,7 @@ function radar_visualization(config) {
     { x: -675, y: -420 };
 
   const footer_offset =
-    { x: -675, y: 420 };
+    { x: -675, y: 490 };
 
   const legend_offset = [
     { x: 450, y: 90 },
