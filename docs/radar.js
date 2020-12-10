@@ -313,6 +313,7 @@ function radar_visualization(config) {
               .style("font-family", "Arial, Helvetica")
               .style("font-size", "11")
               .on("mouseover", function(d) { showBubble(d); highlightLegendItem(d); })
+              .on("click", function(d) { clickLegendItem(d); })
               .on("mouseout", function(d) { hideBubble(d); unhighlightLegendItem(d); });
       }
     }
@@ -376,6 +377,12 @@ function radar_visualization(config) {
     var legendItem = document.getElementById("legendItem" + d.id);
     legendItem.removeAttribute("filter");
     legendItem.removeAttribute("fill");
+  }
+
+  function clickLegendItem(d) {
+    if (config.enable_links && d.hasOwnProperty("link")) {
+      window.location=d.link;
+    }
   }
 
   // draw blips on radar
