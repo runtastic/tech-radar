@@ -40,7 +40,7 @@ radar_visualization({
   ],
   print_layout: true,
   enable_links: false,
-  // zoomed_quadrant: 0,
+  //zoomed_quadrant: 1,
   //ENTRIES
   entries: [
       {
@@ -50,7 +50,15 @@ radar_visualization({
         active: false,
         link: "../datastores/ceph.html",
         moved: 0
-      }, 
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Vault",
+        active: false,
+        link: "../datastores/vault.html",
+        moved: 0
+      },  
       {
         quadrant: 3,
         ring: 3,
@@ -61,7 +69,7 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 1,
+        ring: 0,
         label: "AWS S3",
         active: false,
         link: "../datastores/aws_s3.html",
@@ -94,6 +102,14 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 0,
+        label: "PostgreSQL",
+        active: false,
+        link: "../datastores/postgre_sql.html",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
         label: "Redis",
         active: false,
         link: "../datastores/redis.html",
@@ -101,7 +117,7 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 2,
+        ring: 0,
         label: "Consul",
         active: false,
         link: "../datastores/consul.html",
@@ -133,7 +149,7 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 2,
+        ring: 0,
         label: "ZooKeeper",
         active: false,
         link: "../datastores/zookeeper.html",
@@ -153,6 +169,30 @@ radar_visualization({
         label: "dry-rb",
         active: false,
         link: "../frameworks/dry-rb.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Jetpack",
+        active: false,
+        link: "../frameworks/jetpack.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "SQLDelight",
+        active: false,
+        link: "../frameworks/sql_delight.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Puma",
+        active: false,
+        link: "../frameworks/puma.html",
         moved: 0
       },
       {
@@ -221,7 +261,7 @@ radar_visualization({
       },
       {
         quadrant: 2,
-        ring: 3,
+        ring: 2,
         label: "Kotlin Native",
         active: false,
         link: "../frameworks/kotlin_native.html",
@@ -233,6 +273,30 @@ radar_visualization({
         label: "Rails",
         active: false,
         link: "../frameworks/rails.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "Swift UI",
+        active: false,
+        link: "../frameworks/swift_ui.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "Resque",
+        active: false,
+        link: "../frameworks/resque.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "Trinidad",
+        active: false,
+        link: "../frameworks/trinidad.html",
         moved: 0
       },
       {
@@ -261,7 +325,7 @@ radar_visualization({
       },
       {
         quadrant: 1,
-        ring: 0,
+        ring: 1,
         label: "Ansible",
         active: false,
         link: "../infrastructure/ansible.html",
@@ -326,17 +390,97 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 0,
-        label: "Gradle",
+        label: "Kubernetes",
         active: false,
-        link: "../infrastructure/gradle.html",
+        link: "../infrastructure/kubernetes.html",
         moved: 0
       },
       {
         quadrant: 1,
         ring: 0,
-        label: "Kubernetes",
+        label: "AWS CloudFront",
         active: false,
-        link: "../infrastructure/kubernetes.html",
+        link: "../infrastructure/aws_cloud_front.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Kibana",
+        active: false,
+        link: "../infrastructure/kibana.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Bareos",
+        active: false,
+        link: "../infrastructure/bareos.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Kerberos",
+        active: false,
+        link: "../infrastructure/kerberos.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Atlantis",
+        active: false,
+        link: "../infrastructure/atlantis.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "DRBD",
+        active: false,
+        link: "../infrastructure/drbd.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Cisco ACI",
+        active: false,
+        link: "../infrastructure/cisco_aci.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Pacemaker",
+        active: false,
+        link: "../infrastructure/pacemaker.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "CentOS",
+        active: false,
+        link: "../infrastructure/centos.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "RHEL",
+        active: false,
+        link: "../infrastructure/rhel.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "OpsGenie",
+        active: false,
+        link: "../infrastructure/ops_genie.html",
         moved: 0
       },
       {
@@ -373,7 +517,7 @@ radar_visualization({
       },
       {
         quadrant: 1,
-        ring: 2,
+        ring: 0,
         label: "AWS Lambda",
         active: false,
         link: "../infrastructure/aws_lambda.html",
@@ -381,15 +525,7 @@ radar_visualization({
       },
       {
         quadrant: 1,
-        ring: 2,
-        label: "Chef",
-        active: false,
-        link: "../infrastructure/chef.html",
-        moved: 0
-      },
-      {
-        quadrant: 1,
-        ring: 2,
+        ring: 0,
         label: "OpenNebula",
         active: false,
         link: "../infrastructure/open_nebula.html",
@@ -397,7 +533,7 @@ radar_visualization({
       },
       {
         quadrant: 1,
-        ring: 2,
+        ring: 0,
         label: "Open Shift",
         active: false,
         link: "../infrastructure/open_shift.html",
@@ -405,7 +541,7 @@ radar_visualization({
       },
       {
         quadrant: 1,
-        ring: 2,
+        ring: 0,
         label: "HAProxy",
         active: false,
         link: "../infrastructure/ha_proxy.html",
@@ -421,7 +557,7 @@ radar_visualization({
       },
       {
         quadrant: 1,
-        ring: 2,
+        ring: 0,
         label: "fastlane",
         active: false,
         link: "../infrastructure/fastlane.html",
@@ -430,9 +566,25 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 3,
-        label: "Ubuntu (12.xx, 14.xx)",
+        label: "Ubuntu",
         active: false,
         link: "../infrastructure/ubuntu.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "Glassfish",
+        active: false,
+        link: "../infrastructure/glassfish.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "Chef",
+        active: false,
+        link: "../infrastructure/chef.html",
         moved: 0
       },
       {
@@ -481,14 +633,6 @@ radar_visualization({
         label: "OpenAPI",
         active: true,
         link: "openapi.html",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 2,
-        label: "Typescript",
-        active: true,
-        link: "typescript.html",
         moved: 0
       },
       {
