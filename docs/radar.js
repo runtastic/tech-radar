@@ -48,9 +48,9 @@ function radar_visualization(config) {
   ];
 
   const rings = [
-    { radius: 130 },
-    { radius: 220 },
-    { radius: 310 },
+    { radius: 140 },
+    { radius: 226 },
+    { radius: 313 },
     { radius: 400 }
   ];
 
@@ -58,7 +58,7 @@ function radar_visualization(config) {
     { x: -675, y: -420 };
 
   const footer_offset =
-    { x: -675, y: 420 };
+    { x: -675, y: 490 };
 
   const legend_offset = [
     { x: 450, y: 90 },
@@ -313,6 +313,7 @@ function radar_visualization(config) {
               .style("font-family", "Arial, Helvetica")
               .style("font-size", "11")
               .on("mouseover", function(d) { showBubble(d); highlightLegendItem(d); })
+              .on("click", function(d) { clickLegendItem(d); })
               .on("mouseout", function(d) { hideBubble(d); unhighlightLegendItem(d); });
       }
     }
@@ -376,6 +377,12 @@ function radar_visualization(config) {
     var legendItem = document.getElementById("legendItem" + d.id);
     legendItem.removeAttribute("filter");
     legendItem.removeAttribute("fill");
+  }
+
+  function clickLegendItem(d) {
+    if (config.enable_links && d.hasOwnProperty("link")) {
+      window.location=d.link;
+    }
   }
 
   // draw blips on radar
